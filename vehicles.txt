@@ -1,0 +1,36 @@
+# Vehicle definitions: id | English | Hebrew | Russian | color | description (optional)
+# Lines starting with # are comments
+# Empty lines are ignored
+# Description field is used for detailed image generation prompt
+
+# Construction vehicles
+excavator | Excavator | מחפר | Экскаватор | #FFD700
+bulldozer | Bulldozer | דחפור | Бульдозер | #FF8C00
+forklift | Forklift | מלגזה | Вилочный погрузчик | #9370DB
+shovel_loader | Shovel Loader | שופל | Фронтальный погрузчик | #FFB347
+dump_truck | Dump Truck | משאית עפר | Самосвал | #D2691E
+
+# Cranes
+truck_crane | Truck Crane | משאית מנוף | Кран-машина | #00CED1
+backhoe_loader | Backhoe Loader | מחפרון | Экскаватор-погрузчик | #FF69B4
+
+# Road and concrete
+road_roller | Road Roller | מכבש | Каток | #DAA520
+cement_mixer | Cement Mixer | מערבל בטון | Бетономешалка | #FF6347
+concrete_pump | Concrete Pump | משאבת בטון | Бетононасос | #7B68EE | Truck with Z-shaped folding boom arm made of 3-4 straight sections connected at angles, with outriggers extended for stability, no rotating drum
+
+# Emergency vehicles
+fire_truck | Fire Truck | כבאית | Пожарная машина | #DC143C | Fire truck with red front face, red cabin, red body
+police_car | Police Car | ניידת משטרה | Полицейская машина | #1E90FF
+ambulance | Ambulance | אמבולנס | Скорая помощь | #FFFFFF | White ambulance van like Israeli Magen David Adom
+
+# Transport vehicles
+truck | Truck | משאית | Грузовик | #8B4513
+bus | Bus | אוטובוס | Автобус | #228B22 | Green city public transit bus with large windows, not a yellow school bus
+
+# Utility vehicles
+garbage_truck | Garbage Truck | משאית זבל | Мусорная машина | #32CD32
+snow_plow | Snow Plow | מפלסת שלג | Снегоуборочная машина | #87CEEB | Snow plow truck with large front blade
+
+# Farm vehicles
+tractor | Tractor | טרקטור | Трактор | #20B2AA
