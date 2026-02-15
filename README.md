@@ -8,7 +8,7 @@ Multilingual children's vehicle flashcard generator. Uses Google Gemini AI to cr
 
 ## Features
 
-- **AI Image Generation** — Generates kawaii/chibi-style vehicle illustrations via Gemini 2.0 Flash
+- **AI Image Generation** — Generates cute vehicle illustrations via API calls to Gemini 2.0 Flash
 - **Grid Poster** — Combines all vehicles into a single labeled poster image
 - **Print-Ready Cards** — Individual 5 cm x 7 cm cards at 300 DPI, ready for home printing
 - **Bilingual Labels** — Each vehicle labeled in Hebrew (top) and Russian (bottom)
