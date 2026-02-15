@@ -6,6 +6,7 @@ Usage:
     python pipeline.py              # Run full pipeline (generate + grid)
     python pipeline.py generate     # Generate images only
     python pipeline.py grid         # Create grid only
+    python pipeline.py cards        # Create individual print-ready cards (5×7cm at 300 DPI)
     python pipeline.py generate --vehicle bulldozer  # Regenerate specific vehicle
 """
 
@@ -15,6 +16,7 @@ import sys
 
 import config
 from src import load_vehicles, generate_all_vehicles, create_grid_image
+from src.card_builder import create_all_cards
 
 # Configure logging
 logging.basicConfig(
@@ -117,6 +119,32 @@ def run_grid(vehicles) -> bool:
     return True
 
 
+def run_cards(vehicles) -> bool:
+    """
+    Create individual print-ready cards (5cm × 7cm at 300 DPI).
+
+    Args:
+        vehicles: List of Vehicle objects.
+
+    Returns:
+        True if successful.
+    """
+    logger.info("=" * 60)
+    logger.info("Creating Print-Ready Cards (5×7cm at 300 DPI)")
+    logger.info("=" * 60)
+
+    cards_dir = config.OUTPUT_DIR / "cards"
+
+    created = create_all_cards(
+        vehicles=vehicles,
+        images_dir=config.IMAGES_DIR,
+        output_dir=cards_dir,
+    )
+
+    logger.info(f"Created {len(created)} cards in: {cards_dir}")
+    return True
+
+
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
@@ -127,7 +155,7 @@ def main():
     parser.add_argument(
         "command",
         nargs="?",
-        choices=["generate", "grid", "all"],
+        choices=["generate", "grid", "cards", "all"],
         default="all",
         help="Command to run (default: all)",
     )
@@ -181,6 +209,10 @@ def main():
 
     if args.command in ("grid", "all"):
         if not run_grid(vehicles):
+            success = False
+
+    if args.command == "cards":
+        if not run_cards(vehicles):
             success = False
 
     if success:

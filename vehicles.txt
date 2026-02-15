@@ -22,7 +22,7 @@ concrete_pump | Concrete Pump | משאבת בטון | Бетононасос | #
 # Emergency vehicles
 fire_truck | Fire Truck | כבאית | Пожарная машина | #DC143C | Fire truck with red front face, red cabin, red body
 police_car | Police Car | ניידת משטרה | Полицейская машина | #1E90FF
-ambulance | Ambulance | אמבולנס | Скорая помощь | #FFFFFF | White ambulance van like Israeli Magen David Adom
+ambulance | Ambulance | אמבולנס | Скорая помощь | #FF7F7F | White ambulance van like Israeli Magen David Adom
 
 # Transport vehicles
 truck | Truck | משאית | Грузовик | #8B4513
