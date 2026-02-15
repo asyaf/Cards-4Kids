@@ -1,4 +1,4 @@
-# Image-4kids
+# Cards-4Kids
 
 Multilingual children's vehicle flashcard generator. Uses Google Gemini AI to create cute kawaii-style cartoon vehicle images, then assembles them into print-ready cards and grid posters labeled in Hebrew and Russian.
 
@@ -33,8 +33,8 @@ Multilingual children's vehicle flashcard generator. Uses Google Gemini AI to cr
 ## Setup
 
 ```bash
-git clone https://github.com/<your-username>/Image-4kids.git
-cd Image-4kids
+git clone https://github.com/<your-username>/Cards-4Kids.git
+cd Cards-4Kids
 pip install -r requirements.txt
 
 # Set your Gemini API key
@@ -69,7 +69,7 @@ python pipeline.py --verbose
 ## Project Structure
 
 ```
-Image-4kids/
+Cards-4Kids/
 ├── pipeline.py          # CLI entry point
 ├── config.py            # All configuration (paths, prompts, layout)
 ├── vehicles.txt         # Vehicle definitions (pipe-separated)
